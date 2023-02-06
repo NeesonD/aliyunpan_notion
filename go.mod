@@ -12,4 +12,4 @@ require (
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 )
 
-replace github.com/tickstep/aliyunpan-api v0.1.3 => ../../../GolandProjects/aliyunpan-api
+replace github.com/tickstep/aliyunpan-api v0.1.3 => github.com/NeesonD/aliyunpan-api v0.0.0-20230206074934-b71d9366d2fe
