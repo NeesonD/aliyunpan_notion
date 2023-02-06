@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  run:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -19,7 +19,10 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.19
+        
+    - name: Build
+      run: go build -o=bot ./  
 
     - name: Run
-      run: go run main.go -share_file_depth=${{secrets.SHARE_FILE_DEPTH}} -refresh_token=${{secrets.REFRESH_TOKEN}} -notion_token=${{secrets.NOTION_TOKEN}} -media_db_id=${{secrets.MEDIA_DB_ID}} -filter_file=${{secrets.FILTER_FILE}}
+      run: ./bot -share_file_depth=${{secrets.SHARE_FILE_DEPTH}} -refresh_token=${{secrets.REFRESH_TOKEN}} -notion_token=${{secrets.NOTION_TOKEN}} -media_db_id=${{secrets.MEDIA_DB_ID}} -filter_file=${{secrets.FILTER_FILE}}
 
