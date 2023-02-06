@@ -2,4 +2,4 @@
 
 将阿里云盘目录同步到notion展示
 
-[资源库](https://daile.notion.site/daile/50e246ebd6c4404facf6f6b3351078dd)
+[影视库](https://daile.notion.site/ac879cd1c0004529956be30d18092c5b?v=0dbd78ede0aa4905ab994303b51ceba9)
